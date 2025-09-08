@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { getDb } from '../config/mongo.js';
 import { signToken } from '../middleware/auth.js';
 import { ObjectId } from 'mongodb';

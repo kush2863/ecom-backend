@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 import { MongoClient } from 'mongodb';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 const uri = process.env.MONGO_URL || process.env.MONGODB_URI;
 if (!uri) {
